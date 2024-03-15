@@ -8,6 +8,7 @@
     text-align: center;
     font-size: 1.8rem;
     text-decoration: underline;
+    color: #253f4b;
 }
 
 .educationpart {
@@ -62,10 +63,14 @@
 }
 
 @media(max-width:799px) {
+    .heading{
+        font-size: 1.5rem
+    }
     .info {
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        padding:1rem;
     }
 
     .info .aimg {

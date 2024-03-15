@@ -47,14 +47,27 @@ h3 {
     text-align: center;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 5rem;
     font-size: 5rem;
+}
+.end i{
+    transition: .3s;
+
+}
+.end i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 @media(max-width:999px) {
 
     .hero {
         grid-template-columns: 1fr;
+    }
+    .end{
+        font-size: 3rem;
+        gap: 2rem;
     }
 }
