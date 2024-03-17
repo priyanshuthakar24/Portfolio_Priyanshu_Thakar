@@ -60,6 +60,9 @@ h3 {
     cursor: pointer;
     transform: scale(1.1);
 }
+ #resume{
+    font-size: 4.5rem;
+}
 
 @media(max-width:999px) {
 
@@ -68,6 +71,9 @@ h3 {
     }
     .end{
         font-size: 3rem;
-        gap: 2rem;
+        gap: 1.8rem;
+    }
+    #resume{
+        font-size: 2.8rem;
     }
 }

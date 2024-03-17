@@ -25,8 +25,8 @@ const Navbar = () => {
                     <li><a href="#About" >About</a> </li>
                     <li><a href="#Skills">Skills</a></li>
                     <li><a href="#Education">Education</a></li>
-                    <li><a href="#Experience">Experience</a></li>
                     <li><a href="#Project">Project</a></li>
+                    {/* <li><a href="#Experience">Experience</a></li> */}
                 </ul>
             </div>
             <div id={classes.mobile} onClick={menuhandler}>

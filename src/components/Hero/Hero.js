@@ -2,7 +2,7 @@ import profile from '../assets/p5.jpg';
 import classes from './Hero.module.css';
 import { Fragment } from 'react';
 import { TypeAnimation } from 'react-type-animation';
-
+import { Resume } from '../../data/projects';
 
 const Hero = () => {
     return (
@@ -19,7 +19,7 @@ const Hero = () => {
 
                     <h3>
                         <TypeAnimation
-                            sequence={["hi,I am devloper.", 1000, "I am Creative.", 1000, "I love design", 1000, "I Love to Develop.", 1000,]} speed={1} repeat={Infinity} style={{ fontSize: '2em', color: '#00ABE4' }} />
+                            sequence={["Hi,I am devloper.", 1000, "I am Creative.", 1000, "I love design", 1000, "I Love to Develop.", 1000,]} speed={1} repeat={Infinity} style={{ fontSize: '2em', color: '#00ABE4' }} />
                     </h3>
                     <p>I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.
                     </p>
@@ -30,6 +30,9 @@ const Hero = () => {
                     <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvlHkHwFZJFMMpdQsRXPjXZpDHFgHQGSCrFnwSzBnQtGRrTjhvWCWlbQbqbzcBGnJjwnvV"><i class="fa-solid fa-envelope" style={{ color: '#253f4b' }}></i></a>
 
                     <a href="https://github.com/priyanshuthakar24"><i class="fa-brands fa-square-instagram" style={{ color: '#253f4b' }}></i></a>
+                    {Resume.map(resume =>
+                        <a href={resume.resume_link} download='Priyanshu_Thakar_Resume' id={classes.resume} ><i class="fa-solid fa-file-user" style={{ color: '#253f4b'}}></i></a>
+                    )}
                 </div>
             </div>
         </Fragment>
