@@ -16,7 +16,7 @@ const Education = () => {
                         <p>B.E. in Computer Engineering |  8.52 CPI
                             {/* Bechelor of Engineering in Computer Engineering */}
                         </p>
-                        <span>2020-2024 | Pursing</span>
+                        <span>2020-2024 | Completed</span>
                     </div>
                 </div>
                 <div className={classes.info}>
