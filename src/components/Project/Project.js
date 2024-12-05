@@ -9,9 +9,9 @@ const Project = () => {
             </div>
             <div className={classes.projectinfo}>
                 {Projects.map((project, index) => {
-                    if (index >= 6) return <></>
+                    if (index >= 10) return <></>
                     return <div className={classes.box}>
-                            <img src={project.image_path} alt="" />
+                        <img src={project.image_path} alt="" />
                         <div className={classes.content}>
                             <div className={classes.tag}><h3>{project.name}</h3></div>
                             <div className={classes.desc}>
@@ -25,7 +25,7 @@ const Project = () => {
                     </div>
                 })}
             </div>
-            {Projects.length >= 6 && <button>View All</button>}
+            {Projects.length >= 10 && <button>View All</button>}
         </div>
     )
 }

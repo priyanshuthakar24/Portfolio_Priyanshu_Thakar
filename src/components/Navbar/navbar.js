@@ -18,7 +18,7 @@ const Navbar = () => {
 
     return (
         <div className={classes.Navbar}>
-            <div className={classes.logo}> <TypeAnimation sequence={["<Priyanshu / Thakar >", 10,]} speed={10} /> </div>
+            <div className={classes.logo}> <TypeAnimation sequence={["<Priyanshu Thakar/>", 10,]} speed={10} /> </div>
             <div className={classes.navbar}>
                 <ul className={`${classes.navbar}  ${activestate ? classes.active : ''}`} >
                     <a href="#close" id={classes.close} onClick={closehandler}><i class="fa-solid fa-circle-xmark"></i></a>
